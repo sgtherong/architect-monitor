@@ -58,3 +58,7 @@ node scripts/prepare-snapshot.mjs /path/to/export.json
 인증 토큰, 비공개 수집 API, 데이터 입력·설정 변경 API는 이 저장소에 포함하지 않습니다.
 
 2026-10-15 추가: JJAMx Gaming & Cosplay의 Facebook 영상 `1443913631040943`, PuddingKat CH의 YouTube 영상 `G36iQinLR0I`. 두 영상의 이전 날짜 수치는 소급 수집하지 않으며, 기존 채팅·감성 분석에 포함된 것으로 표시하지 않습니다.
+
+## 매일 추가된 댓글·채팅 분석
+
+반응 분석은 **일일 신규 반응**과 **기존 방송 분석(10/13)**으로 나뉩니다. 일일 자료는 `docs/data/reactions.json`에서 읽고, 영상·수집일·댓글/채팅·감성 분류별로 확인합니다. 수집 실패와 댓글 0건, 기존 방송의 나중 확보 자료를 구분합니다. 자세한 수집·중복 방지·분석·배포 절차는 `DAILY_REACTIONS.md`를 따릅니다. 공개 수집 스크립트는 유료 API를 호출하지 않습니다.
