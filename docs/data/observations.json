@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-15T05:49:21.288Z",
+  "publishedAt": "2026-10-15T06:10:59.553Z",
   "rows": [
     {
       "videoId": "6IQaqST2Ygc",
@@ -573,6 +573,19 @@
       "precision": "provider",
       "status": "unavailable",
       "note": "2026-10-15 신규 등록. YouTube oEmbed에서 제목·채널 확인, 공개 영상 페이지는 HTTP 429로 수치 확인 실패. 오늘 유료 조회가 완료되어 추가 호출 없이 다음 정기 일괄 수집에서 확인 예정. 이 시각은 등록·확인 시각이며 수치 관측 시각이 아님."
+    },
+    {
+      "videoId": "G36iQinLR0I",
+      "day": "2026-10-15",
+      "observedAt": "2026-10-15T06:09:21.312Z",
+      "views": 3450,
+      "likes": 72,
+      "comments": 0,
+      "reactions": null,
+      "source": "vidIQ 현재 영상 수치",
+      "precision": "provider",
+      "status": "ok",
+      "note": "2026-10-15 사용자 요청으로 신규 지정 영상의 현재 수치를 1회 보완. 실제 조회 시각 기준이며 이전 날짜로 소급하지 않음. 일반 댓글 수와 방송 채팅은 별개."
     }
   ],
   "config": {
