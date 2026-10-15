@@ -1,6 +1,6 @@
 # Architect 지정 영상 일별 모니터링
 
-YouTube 7개 및 Facebook 1개 영상의 공개 수치를 표시하는 GitHub Pages 대시보드입니다. 기존 화면과 영상별 행 × 날짜별 열의 기록 표, 조회수·좋아요·댓글·Facebook 반응 선택, CSV·JSON 내보내기를 제공합니다.
+YouTube 8개 및 Facebook 2개 영상의 공개 수치를 표시하는 GitHub Pages 대시보드입니다. 기존 화면과 영상별 행 × 날짜별 열의 기록 표, 조회수·좋아요·댓글·Facebook 반응 선택, CSV·JSON 내보내기를 제공합니다.
 
 ## 게시
 
@@ -12,11 +12,11 @@ YouTube 7개 및 Facebook 1개 영상의 공개 수치를 표시하는 GitHub Pa
 
 ## 일일 자료 반영 구조
 
-기존 수집 작업은 지정된 8개 영상만 확인하고 기존 데이터 저장소에 실제 관측 시각과 미확인 값을 보관합니다. 수집 후 검증된 자료를 이 저장소의 **`docs/data/observations.json`** 한 파일에 동기화하면 Pages에도 반영됩니다. 페이지를 열거나 새로고침해도 유료 수집을 실행하지 않습니다.
+기존 수집 작업은 지정된 10개 영상만 확인하고 기존 데이터 저장소에 실제 관측 시각과 미확인 값을 보관합니다. 수집 후 검증된 자료를 이 저장소의 **`docs/data/observations.json`** 한 파일에 동기화하면 Pages에도 반영됩니다. 페이지를 열거나 새로고침해도 유료 수집을 실행하지 않습니다.
 
 기존 일일 수집 작업에서 `sgtherong/architect-monitor`의 `main` 브랜치로 관측 파일을 동기화합니다. 수집 일정은 기존 작업 하나로 운영하며, GitHub 게시를 위한 중복 유료 조회를 실행하지 않습니다.
 
-- 수집 범위: `data/targets.json`의 8개 ID만 허용합니다.
+- 수집 범위: `data/targets.json`의 10개 ID만 허용합니다.
 - 날짜 기준: Asia/Seoul. `observedAt`의 실제 시각을 보존합니다.
 - 미확인: 숫자 0으로 채우지 않고 `null`로 유지합니다.
 - 같은 날짜: 마지막 확인값을 표시합니다. 원본 관측 이력은 삭제하지 않습니다.
@@ -56,3 +56,5 @@ node scripts/prepare-snapshot.mjs /path/to/export.json
 - `scripts/prepare-snapshot.mjs`: 공개 자료 검증 및 변환
 
 인증 토큰, 비공개 수집 API, 데이터 입력·설정 변경 API는 이 저장소에 포함하지 않습니다.
+
+2026-10-15 추가: JJAMx Gaming & Cosplay의 Facebook 영상 `1443913631040943`, PuddingKat CH의 YouTube 영상 `G36iQinLR0I`. 두 영상의 이전 날짜 수치는 소급 수집하지 않으며, 기존 채팅·감성 분석에 포함된 것으로 표시하지 않습니다.

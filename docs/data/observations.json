@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-15T03:51:57.040Z",
+  "publishedAt": "2026-10-15T05:49:21.288Z",
   "rows": [
     {
       "videoId": "6IQaqST2Ygc",
@@ -547,11 +547,37 @@
       "precision": "approximate",
       "status": "partial",
       "note": "원문 표시 조회 2.6천회 · 공감 125개. 댓글·채팅·공유 및 반응 유형 미확인."
+    },
+    {
+      "videoId": "1443913631040943",
+      "day": "2026-10-15",
+      "observedAt": "2026-10-15T05:44:04.299190+00:00",
+      "views": 8800,
+      "likes": null,
+      "comments": null,
+      "reactions": 268,
+      "source": "Facebook 공개 영상 메타데이터",
+      "precision": "approximate",
+      "status": "partial",
+      "note": "공개 og:title: 조회 8.8천회 · 공감 268개. 조회수는 축약 표시 근삿값. 댓글·채팅·공유·반응 유형 미확인. 2026-10-15 수집 대상 추가."
+    },
+    {
+      "videoId": "G36iQinLR0I",
+      "day": "2026-10-15",
+      "observedAt": "2026-10-15T05:46:10.795209+00:00",
+      "views": null,
+      "likes": null,
+      "comments": null,
+      "reactions": null,
+      "source": "수집 대상 등록 · 현재 수치 미확인",
+      "precision": "provider",
+      "status": "unavailable",
+      "note": "2026-10-15 신규 등록. YouTube oEmbed에서 제목·채널 확인, 공개 영상 페이지는 HTTP 429로 수치 확인 실패. 오늘 유료 조회가 완료되어 추가 호출 없이 다음 정기 일괄 수집에서 확인 예정. 이 시각은 등록·확인 시각이며 수치 관측 시각이 아님."
     }
   ],
   "config": {
     "scheduleStatus": "active",
-    "historyStatus": "YouTube 7개 영상의 과거 관측 26건 확보. 10월 14일 누락 자료 보완 완료. 날짜는 관측 시각의 한국 시간 기준이며, Facebook 과거 일별 기록은 미확보."
+    "historyStatus": "기존 YouTube 7개 영상의 과거 관측 26건 확보, 10월 14일 자료 보완 완료. 신규 JJAMx Facebook·PuddingKat CH YouTube 영상은 10월 15일부터 등록하며 이전 날짜는 소급 수집하지 않습니다. 날짜는 관측 시각의 한국 시간 기준입니다."
   },
   "stored": true
 }

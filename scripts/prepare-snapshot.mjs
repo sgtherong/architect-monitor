@@ -20,7 +20,7 @@ const rows=input.rows.map(row=>{
  keys.add(key);
  return Object.fromEntries(fields.map(field=>[field,row[field]??(field==='note'?'':null)]));
 }).sort((a,b)=>Date.parse(a.observedAt)-Date.parse(b.observedAt));
-if(new Set(rows.map(r=>r.videoId)).size!==8)throw Error('All eight targets must be preserved');
+if(new Set(rows.map(r=>r.videoId)).size!==ids.size)throw Error('All designated targets must be preserved');
 const snapshot={schemaVersion:1,publishedAt:new Date().toISOString(),rows,config:{scheduleStatus:input.config?.scheduleStatus||'unknown',historyStatus:input.config?.historyStatus||'실제 확보한 날짜만 표시합니다. 미확인 날짜는 추정하지 않습니다.'},stored:true};
 const output=path.join(root,'docs/data/observations.json');
 fs.mkdirSync(path.dirname(output),{recursive:true});

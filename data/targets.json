@@ -102,5 +102,33 @@
     "top1": null,
     "start": null,
     "color": "#526cb9"
+  },
+  {
+    "id": "1443913631040943",
+    "ref": "V9",
+    "channel": "JJAMx Gaming & Cosplay",
+    "title": "🔴LIVE🔴 Architect: Land Of Exiles กำเนิดนักเวทย์สาวเบิ้มๆคือลือเลยล่ะ",
+    "url": "https://www.facebook.com/JJamGaming/videos/1443913631040943/",
+    "platform": "facebook",
+    "chat": null,
+    "authors": null,
+    "top1": null,
+    "start": null,
+    "color": "#b16d84",
+    "addedAt": "2026-10-15"
+  },
+  {
+    "id": "G36iQinLR0I",
+    "ref": "V10",
+    "channel": "PuddingKat CH",
+    "title": "Architect: Land of Exiles - MMO ภาพโครตสวย เปิดเซิฟใหม่ สดาต",
+    "url": "https://www.youtube.com/watch?v=G36iQinLR0I",
+    "platform": "youtube",
+    "chat": null,
+    "authors": null,
+    "top1": null,
+    "start": null,
+    "color": "#b99450",
+    "addedAt": "2026-10-15"
   }
 ]

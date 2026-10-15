@@ -544,5 +544,31 @@
     "precision": "approximate",
     "status": "partial",
     "note": "원문 표시 조회 2.6천회 · 공감 125개. 댓글·채팅·공유 및 반응 유형 미확인."
+  },
+  {
+    "videoId": "1443913631040943",
+    "day": "2026-10-15",
+    "observedAt": "2026-10-15T05:44:04.299190+00:00",
+    "views": 8800,
+    "likes": null,
+    "comments": null,
+    "reactions": 268,
+    "source": "Facebook 공개 영상 메타데이터",
+    "precision": "approximate",
+    "status": "partial",
+    "note": "공개 og:title: 조회 8.8천회 · 공감 268개. 조회수는 축약 표시 근삿값. 댓글·채팅·공유·반응 유형 미확인. 2026-10-15 수집 대상 추가."
+  },
+  {
+    "videoId": "G36iQinLR0I",
+    "day": "2026-10-15",
+    "observedAt": "2026-10-15T05:46:10.795209+00:00",
+    "views": null,
+    "likes": null,
+    "comments": null,
+    "reactions": null,
+    "source": "수집 대상 등록 · 현재 수치 미확인",
+    "precision": "provider",
+    "status": "unavailable",
+    "note": "2026-10-15 신규 등록. YouTube oEmbed에서 제목·채널 확인, 공개 영상 페이지는 HTTP 429로 수치 확인 실패. 오늘 유료 조회가 완료되어 추가 호출 없이 다음 정기 일괄 수집에서 확인 예정. 이 시각은 등록·확인 시각이며 수치 관측 시각이 아님."
   }
 ]
