@@ -1,0 +1,792 @@
+[
+  {
+    "evidence_id": "V1-010",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "2:51",
+    "direction": "참여 의향",
+    "summary_ko": "다시 돌아와 시험해 보겠다는 반응이다.",
+    "note": "실제 설치나 잔존 확인은 아님",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=171s"
+  },
+  {
+    "evidence_id": "V1-021",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "14:28",
+    "direction": "긍정",
+    "summary_ko": "플레이하고 싶다는 매력을 표현했다.",
+    "note": "게임 매력에 대한 직접 반응",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=868s"
+  },
+  {
+    "evidence_id": "V1-022",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "15:06",
+    "direction": "질문",
+    "summary_ko": "플레이 시간이 적은 사람이 화면을 오래 지켜봐야 하는지 물었다.",
+    "note": "시간 부담에 대한 사전 확인",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=906s"
+  },
+  {
+    "evidence_id": "V1-032",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "24:29",
+    "direction": "참여 의향",
+    "summary_ko": "방송자의 링크로 다운로드했다고 말했다.",
+    "note": "자가 보고이며 설치 전환 검증은 아님",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=1469s"
+  },
+  {
+    "evidence_id": "V1-053",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "53:02",
+    "direction": "긍정",
+    "summary_ko": "여성 캐릭터 의상을 게임의 매력으로 언급했다.",
+    "note": "외형 호감을 전반적 만족으로 확대하지 않음",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=3182s"
+  },
+  {
+    "evidence_id": "V1-091",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "1:11:02",
+    "direction": "혼합",
+    "summary_ko": "재미는 있다고 하면서도 상당한 부담을 느낀다는 과장된 표현을 함께 썼다.",
+    "note": "부담의 구체 원인은 해당 문장만으로 확정 불가",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=4262s"
+  },
+  {
+    "evidence_id": "V1-148",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "2:11:30",
+    "direction": "혼합",
+    "summary_ko": "사람이 많아 매력적이지만 다른 게임에 쓴 비용이 아깝다고 했다.",
+    "note": "타 게임 지출은 이 게임의 과금 피해가 아님",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=7890s"
+  },
+  {
+    "evidence_id": "V1-159",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "2:18:07",
+    "direction": "긍정",
+    "summary_ko": "의상이 본인 취향에 잘 맞는다는 반응이다.",
+    "note": "외형 호감",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=8287s"
+  },
+  {
+    "evidence_id": "V1-220",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "2:51:26",
+    "direction": "위험 경고",
+    "summary_ko": "외부 다이아 거래 때 환불 관련 위험을 조심하라는 조언이다.",
+    "note": "제보자의 설명이며 실제 거래 구조 미검증",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=10286s"
+  },
+  {
+    "evidence_id": "V1-270",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "3:08:10",
+    "direction": "위험 경고",
+    "summary_ko": "일부 다이아 구매 방식에서 제재 가능성이 있다는 이용자 경고다.",
+    "note": "공식 제재 기준으로 취급하지 않음",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=11290s"
+  },
+  {
+    "evidence_id": "V1-280",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "3:14:16",
+    "direction": "긍정",
+    "summary_ko": "현재는 재미있게 즐기겠다는 반응이다.",
+    "note": "단기 플레이 경험",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=11656s"
+  },
+  {
+    "evidence_id": "V1-291",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "3:17:34",
+    "direction": "부정",
+    "summary_ko": "과금했어도 다른 이용자에게 크게 밀린다고 말했다.",
+    "note": "개인 경험 주장으로 밸런스 사실 확정 불가",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=11854s"
+  },
+  {
+    "evidence_id": "V1-315",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "3:30:25",
+    "direction": "문제 제보",
+    "summary_ko": "길드나 전체 채팅으로 공유하지 않으면 외부 파티 초대가 표시되지 않는다고 주장했다.",
+    "note": "버그 재현 필요",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=12625s"
+  },
+  {
+    "evidence_id": "V1-327",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "3:36:42",
+    "direction": "부정",
+    "summary_ko": "동료들의 뽑기를 본 뒤 우선 무과금으로 하겠다고 결정했다.",
+    "note": "뽑기 장면이 지출 경계로 이어진 사례",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=13002s"
+  },
+  {
+    "evidence_id": "V1-344",
+    "video_id": "7Qs3MWJbHHQ",
+    "channel": "AD-AOF TV",
+    "timestamp": "3:48:33",
+    "direction": "질문",
+    "summary_ko": "붉은 등급 무기를 직접 사는 것과 뽑기에 결제하는 것 중 어느 쪽이 나은지 물었다.",
+    "note": "비용 예측 안내 수요",
+    "url": "https://www.youtube.com/watch?v=7Qs3MWJbHHQ&t=13713s"
+  },
+  {
+    "evidence_id": "V2-005",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "6:46",
+    "direction": "긍정",
+    "summary_ko": "재미 여부는 더 보겠지만 그래픽은 아름답다고 평가했다.",
+    "note": "재미에 대한 호평으로 합산하지 않음",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=406s"
+  },
+  {
+    "evidence_id": "V2-013",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "14:56",
+    "direction": "질문",
+    "summary_ko": "일반 노트북의 실행 가능 여부와 다른 게임 대비 요구 사양을 물었다.",
+    "note": "진입 장벽 관련 문의",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=896s"
+  },
+  {
+    "evidence_id": "V2-020",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "19:11",
+    "direction": "방송 품질",
+    "summary_ko": "스트리밍 화면이 조금 끊긴다고 말했다.",
+    "note": "게임 클라이언트 결함과 구분",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=1151s"
+  },
+  {
+    "evidence_id": "V2-021",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "19:25",
+    "direction": "질문",
+    "summary_ko": "에뮬레이터 실행 가능 여부와 제재 위험을 물었다.",
+    "note": "지원 환경과 정책 안내 수요",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=1165s"
+  },
+  {
+    "evidence_id": "V2-044",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "47:31",
+    "direction": "질문",
+    "summary_ko": "재미와 무과금 플레이의 편안함을 함께 물었다.",
+    "note": "질문을 부정 평가로 분류하지 않음",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=2851s"
+  },
+  {
+    "evidence_id": "V2-045",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "47:53",
+    "direction": "과금 우려",
+    "summary_ko": "많은 결제가 필요한 게임이라는 이야기를 들었다고 전했다.",
+    "note": "직접 경험이 아닌 전언",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=2873s"
+  },
+  {
+    "evidence_id": "V2-046",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "49:03",
+    "direction": "긍정",
+    "summary_ko": "의상이 매력적이어서 돈을 쓸 의향이 있다는 반응이다.",
+    "note": "외형 상품의 지불 의향",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=2943s"
+  },
+  {
+    "evidence_id": "V2-063",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "1:08:49",
+    "direction": "질문",
+    "summary_ko": "결제를 많이 해야 하는지 물었다.",
+    "note": "진입 전 비용 확인",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=4129s"
+  },
+  {
+    "evidence_id": "V2-089",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "1:33:00",
+    "direction": "참여 의향",
+    "summary_ko": "다운로드하겠다고 말했다.",
+    "note": "실제 설치 검증은 아님",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=5580s"
+  },
+  {
+    "evidence_id": "V2-098",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "1:40:59",
+    "direction": "부정",
+    "summary_ko": "게임 시스템보다 결제 시스템을 배우는 듯하다고 풍자했다.",
+    "note": "게임과 방송 구성에 걸친 반응",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=6059s"
+  },
+  {
+    "evidence_id": "V2-126",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "2:01:07",
+    "direction": "방송 품질",
+    "summary_ko": "스트리밍이 끊긴다고 직접 지적했다.",
+    "note": "방송 품질 불만",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=7267s"
+  },
+  {
+    "evidence_id": "V2-129",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "2:05:11",
+    "direction": "방송 품질",
+    "summary_ko": "자신만 끊기는 줄 알고 여러 번 새로고침했다고 말했다.",
+    "note": "시청 중 체감한 끊김",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=7511s"
+  },
+  {
+    "evidence_id": "V2-138",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "2:20:06",
+    "direction": "문제 제보",
+    "summary_ko": "게임을 오래 켜두면 끊긴다고 주장했다.",
+    "note": "실제 성능 원인 미검증",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=8406s"
+  },
+  {
+    "evidence_id": "V2-151",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "2:33:08",
+    "direction": "부정",
+    "summary_ko": "결제 부담이 크다는 평가를 제시했다.",
+    "note": "이용자 의견",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=9188s"
+  },
+  {
+    "evidence_id": "V2-179",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "2:43:16",
+    "direction": "부정",
+    "summary_ko": "가챠가 많고 부담이 크다고 평가했다.",
+    "note": "전체 게임 이용자를 대표하지 않음",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=9796s"
+  },
+  {
+    "evidence_id": "V2-182",
+    "video_id": "hVmOUD0DmT8",
+    "channel": "Junqko",
+    "timestamp": "2:44:19",
+    "direction": "부정",
+    "summary_ko": "보이는 것이 결제 장면뿐이라는 비판이다.",
+    "note": "방송의 과금 노출에 대한 불만",
+    "url": "https://www.youtube.com/watch?v=hVmOUD0DmT8&t=9859s"
+  },
+  {
+    "evidence_id": "V3-026",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "13:20",
+    "direction": "긍정",
+    "summary_ko": "서버 통합 시장이라 거래하기 쉽다고 설명했다.",
+    "note": "이용자의 시장 평가이며 거래량 통계 아님",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=800s"
+  },
+  {
+    "evidence_id": "V3-027",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "13:26",
+    "direction": "문제 제보",
+    "summary_ko": "다이아를 판매한 뒤 계정이 제재됐다고 주장했다.",
+    "note": "단일 이용자의 주장",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=806s"
+  },
+  {
+    "evidence_id": "V3-030",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "13:55",
+    "direction": "문제 제보",
+    "summary_ko": "문의 티켓을 보냈으나 답을 받지 못했다고 주장했다.",
+    "note": "접수 번호와 경과 시간 미확인",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=835s"
+  },
+  {
+    "evidence_id": "V3-043",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "15:55",
+    "direction": "문제 제보",
+    "summary_ko": "계정 이용 제한 안내 후 연락했지만 답이 없었다고 같은 이용자가 덧붙였다.",
+    "note": "앞선 제보와 같은 사람으로 별도 피해자 아님",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=955s"
+  },
+  {
+    "evidence_id": "V3-069",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "22:04",
+    "direction": "문제 제보",
+    "summary_ko": "여러 계정 중 결제하지 않은 두 계정이 제재됐다고 주장했다.",
+    "note": "무과금 때문에 제재됐다는 인과관계 미확인",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=1324s"
+  },
+  {
+    "evidence_id": "V3-075",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "23:43",
+    "direction": "반대 사례",
+    "summary_ko": "다른 이용자는 비과금 계정이 제재됐다가 해제됐다고 말했다.",
+    "note": "해제 과정의 사실 확인 필요",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=1423s"
+  },
+  {
+    "evidence_id": "V3-079",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "24:43",
+    "direction": "질문",
+    "summary_ko": "제재 사유를 문의했는데 풀리지 않는다며 문의 방법을 물었다.",
+    "note": "고객지원 처리 설명 수요",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=1483s"
+  },
+  {
+    "evidence_id": "V3-130",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "40:41",
+    "direction": "부정",
+    "summary_ko": "무과금은 운에 의존해야 한다는 인식을 보였다.",
+    "note": "성장 구조에 대한 개인 평가",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=2441s"
+  },
+  {
+    "evidence_id": "V3-221",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "1:04:40",
+    "direction": "긍정",
+    "summary_ko": "특정 패키지가 다이아와 뽑기권을 함께 줘 유리하다고 추천했다.",
+    "note": "공식 상품 가치 검증과 구분",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=3880s"
+  },
+  {
+    "evidence_id": "V3-234",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "1:09:11",
+    "direction": "문제 제보",
+    "summary_ko": "가끔 멈추므로 재접속을 권하는 조언이다.",
+    "note": "오류 발생 빈도는 알 수 없음",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=4151s"
+  },
+  {
+    "evidence_id": "V3-294",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "1:20:55",
+    "direction": "문제 제보",
+    "summary_ko": "캐릭터가 맵을 벗어났다는 반응이다.",
+    "note": "전후 영상 재생으로 재현 확인 필요",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=4855s"
+  },
+  {
+    "evidence_id": "V3-309",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "1:23:51",
+    "direction": "문제 제보",
+    "summary_ko": "버그가 나서 검은 상태가 이어진다고 말했다.",
+    "note": "다른 채팅의 웃음을 호평으로 세지 않음",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=5031s"
+  },
+  {
+    "evidence_id": "V3-357",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "1:37:51",
+    "direction": "긍정",
+    "summary_ko": "통합 시장 덕분에 장비 제작이 편하다고 평가했다.",
+    "note": "시장 편의",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=5871s"
+  },
+  {
+    "evidence_id": "V3-383",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "1:42:13",
+    "direction": "부정",
+    "summary_ko": "해당 가격이 비싸다고 반응했다.",
+    "note": "특정 가격에 대한 평가",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=6133s"
+  },
+  {
+    "evidence_id": "V3-456",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "1:56:50",
+    "direction": "부정",
+    "summary_ko": "결제하지 않으면 성장하지 못한다는 표현을 썼다.",
+    "note": "V4의 유사 발언과 같은 작성 계정",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=7010s"
+  },
+  {
+    "evidence_id": "V3-639",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "2:32:14",
+    "direction": "이동 장벽",
+    "summary_ko": "기존 서버에서 이미 많이 지출해 옮기기 어렵다는 반응이다.",
+    "note": "신규 서버 이동 비용 인식",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=9134s"
+  },
+  {
+    "evidence_id": "V3-701",
+    "video_id": "oQn1XXS_Fmc",
+    "channel": "Shipdont",
+    "timestamp": "2:42:16",
+    "direction": "부정",
+    "summary_ko": "초반이 지루하고 알림 표시가 많다고 평가했다.",
+    "note": "초반 이용 경험 개선 신호",
+    "url": "https://www.youtube.com/watch?v=oQn1XXS_Fmc&t=9736s"
+  },
+  {
+    "evidence_id": "V4-014",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "3:41",
+    "direction": "참여 의향",
+    "summary_ko": "다른 게임 방송에서 넘어와 다운로드 중이며 함께하겠다고 했다.",
+    "note": "진행자 커뮤니티를 통한 유입 신호",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=221s"
+  },
+  {
+    "evidence_id": "V4-032",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "10:38",
+    "direction": "긍정",
+    "summary_ko": "입체적 그래픽 때문에 플레이하고 싶다고 말했다.",
+    "note": "그래픽 호감",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=638s"
+  },
+  {
+    "evidence_id": "V4-035",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "12:19",
+    "direction": "긍정",
+    "summary_ko": "캐릭터 외형에 끌려 빠르게 다운로드했다고 말했다.",
+    "note": "외형과 설치 의향의 연결 사례",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=739s"
+  },
+  {
+    "evidence_id": "V4-079",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "41:30",
+    "direction": "우려",
+    "summary_ko": "자유 PK 환경에서는 사냥할 공간이 부족할 수 있다고 우려했다.",
+    "note": "실제 사냥터 봉쇄 확인은 아님",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=2490s"
+  },
+  {
+    "evidence_id": "V4-081",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "44:09",
+    "direction": "우려",
+    "summary_ko": "이런 유형의 게임에서는 가방 문제가 생긴다는 경험적 우려다.",
+    "note": "장르 일반론으로 실제 결함 단정 금지",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=2649s"
+  },
+  {
+    "evidence_id": "V4-115",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "56:20",
+    "direction": "긍정",
+    "summary_ko": "출시 패키지의 다이아와 뽑기 보상을 유리하게 평가했다.",
+    "note": "이용자 추천",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=3380s"
+  },
+  {
+    "evidence_id": "V4-158",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "1:13:12",
+    "direction": "질문",
+    "summary_ko": "재설정할 때마다 비용이 올라가는지 물었다.",
+    "note": "가격 구조 문의",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=4392s"
+  },
+  {
+    "evidence_id": "V4-227",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "1:40:26",
+    "direction": "긍정",
+    "summary_ko": "보이는 외형을 아름답다고 짧게 평가했다.",
+    "note": "대상 범위는 해당 장면에 한정",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=6026s"
+  },
+  {
+    "evidence_id": "V4-232",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "1:43:22",
+    "direction": "부정",
+    "summary_ko": "상당 시간 시청했는데 뽑기만 이어진다고 지적했다.",
+    "note": "방송 구성의 단조로움",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=6202s"
+  },
+  {
+    "evidence_id": "V4-246",
+    "video_id": "wKD2bxDzGhM",
+    "channel": "Iammaii",
+    "timestamp": "1:50:36",
+    "direction": "부정",
+    "summary_ko": "가챠 중심이며 결제하지 않으면 성장하지 못한다는 인식을 드러냈다.",
+    "note": "V3-456과 동일 계정의 반복 의견",
+    "url": "https://www.youtube.com/watch?v=wKD2bxDzGhM&t=6636s"
+  },
+  {
+    "evidence_id": "V5-002",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "0:43",
+    "direction": "긍정",
+    "summary_ko": "게임이 재미있다고 직접 말했다.",
+    "note": "재미에 대한 직접 평가",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=43s"
+  },
+  {
+    "evidence_id": "V5-024",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "1:01:43",
+    "direction": "질문",
+    "summary_ko": "결제를 많이 해야 하는지, 하지 않아도 되는지 물었다.",
+    "note": "비용 안내 수요",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=3703s"
+  },
+  {
+    "evidence_id": "V5-045",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "2:24:10",
+    "direction": "참여 의향",
+    "summary_ko": "다운로드를 고려하며 무과금으로 함께할 수 있는지 물었다.",
+    "note": "참여 의향과 조건 확인",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=8650s"
+  },
+  {
+    "evidence_id": "V5-048",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "2:27:16",
+    "direction": "우려",
+    "summary_ko": "초기 무과금 플레이는 성장 격차가 벌어진다고 말했다.",
+    "note": "개인의 성장 인식",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=8836s"
+  },
+  {
+    "evidence_id": "V5-057",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "2:40:40",
+    "direction": "긍정",
+    "summary_ko": "계속 보다 보니 재미있어졌다는 반응이다.",
+    "note": "방송 시청 경험과 게임 경험 구분 필요",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=9640s"
+  },
+  {
+    "evidence_id": "V5-106",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "3:21:58",
+    "direction": "이동 의향",
+    "summary_ko": "기존 서버 계정을 팔고 신규 서버로 오고 싶다는 반응이다.",
+    "note": "이동 의향이며 실제 이동 확인 아님",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=12118s"
+  },
+  {
+    "evidence_id": "V5-166",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "3:39:35",
+    "direction": "부정",
+    "summary_ko": "처음에는 복잡하고 무과금은 많은 정보를 찾아야 한다고 했다.",
+    "note": "학습 부담",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=13175s"
+  },
+  {
+    "evidence_id": "V5-203",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "3:58:33",
+    "direction": "혼합",
+    "summary_ko": "재미는 있지만 과금이 승패를 좌우하는 구조에 불편함을 드러냈다.",
+    "note": "재미와 과금 비판이 한 문장에 공존",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=14313s"
+  },
+  {
+    "evidence_id": "V5-207",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "4:00:04",
+    "direction": "이동 장벽",
+    "summary_ko": "이미 얻은 고등급 외형이 아까워 서버 이동 수단을 기다린다고 했다.",
+    "note": "기존 투자 가치 보전 요구",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=14404s"
+  },
+  {
+    "evidence_id": "V5-242",
+    "video_id": "T78eBrhqu-0",
+    "channel": "ZealotsX Mobile",
+    "timestamp": "4:16:09",
+    "direction": "문제 제보",
+    "summary_ko": "느려지거나 멈추면 재접속하라는 조언과 현재 상태에 대한 불만이다.",
+    "note": "증상 제보이며 원인 미확인",
+    "url": "https://www.youtube.com/watch?v=T78eBrhqu-0&t=15369s"
+  },
+  {
+    "evidence_id": "V6-012",
+    "video_id": "6IQaqST2Ygc",
+    "channel": "JayMeander",
+    "timestamp": "15:26",
+    "direction": "긍정",
+    "summary_ko": "건축물 표현이 아름답다고 했다.",
+    "note": "배경 그래픽 평가",
+    "url": "https://www.youtube.com/watch?v=6IQaqST2Ygc&t=926s"
+  },
+  {
+    "evidence_id": "V6-013",
+    "video_id": "6IQaqST2Ygc",
+    "channel": "JayMeander",
+    "timestamp": "15:46",
+    "direction": "질문",
+    "summary_ko": "게임의 핵심 차별점이 무엇인지 물었다.",
+    "note": "방송의 설명 수요",
+    "url": "https://www.youtube.com/watch?v=6IQaqST2Ygc&t=946s"
+  },
+  {
+    "evidence_id": "V6-015",
+    "video_id": "6IQaqST2Ygc",
+    "channel": "JayMeander",
+    "timestamp": "18:08",
+    "direction": "질문",
+    "summary_ko": "과금이 승패를 좌우하는 게임인지 물었다.",
+    "note": "질문을 P2W 확정 평가로 바꾸지 않음",
+    "url": "https://www.youtube.com/watch?v=6IQaqST2Ygc&t=1088s"
+  },
+  {
+    "evidence_id": "V6-022",
+    "video_id": "6IQaqST2Ygc",
+    "channel": "JayMeander",
+    "timestamp": "28:11",
+    "direction": "조건부 관심",
+    "summary_ko": "오프라인 기능이 있다면 매력적일 것이라고 말했다.",
+    "note": "기능 존재를 검증한 발언은 아님",
+    "url": "https://www.youtube.com/watch?v=6IQaqST2Ygc&t=1691s"
+  },
+  {
+    "evidence_id": "V6-037",
+    "video_id": "6IQaqST2Ygc",
+    "channel": "JayMeander",
+    "timestamp": "1:40:34",
+    "direction": "질문",
+    "summary_ko": "새 서버의 지급 보상을 물었다.",
+    "note": "신규 서버 참여 조건 확인",
+    "url": "https://www.youtube.com/watch?v=6IQaqST2Ygc&t=6034s"
+  },
+  {
+    "evidence_id": "V6-038",
+    "video_id": "6IQaqST2Ygc",
+    "channel": "JayMeander",
+    "timestamp": "1:42:13",
+    "direction": "추측",
+    "summary_ko": "여러 채널이 동시에 방송하는 이유가 유료 섭외인지 의문을 제기했다.",
+    "note": "광고 계약 사실의 증거는 아님",
+    "url": "https://www.youtube.com/watch?v=6IQaqST2Ygc&t=6133s"
+  },
+  {
+    "evidence_id": "V6-042",
+    "video_id": "6IQaqST2Ygc",
+    "channel": "JayMeander",
+    "timestamp": "1:59:56",
+    "direction": "질문",
+    "summary_ko": "접속 대기열이 아직 있는지 물었다.",
+    "note": "현재 대기열 발생 확인은 아님",
+    "url": "https://www.youtube.com/watch?v=6IQaqST2Ygc&t=7196s"
+  },
+  {
+    "evidence_id": "V7-004",
+    "video_id": "gVFwMSk54vA",
+    "channel": "Ngor CH",
+    "timestamp": "20:55",
+    "direction": "질문",
+    "summary_ko": "모바일에서도 플레이할 수 있는지 물었다.",
+    "note": "지원 플랫폼 안내 수요",
+    "url": "https://www.youtube.com/watch?v=gVFwMSk54vA&t=1255s"
+  },
+  {
+    "evidence_id": "V7-006",
+    "video_id": "gVFwMSk54vA",
+    "channel": "Ngor CH",
+    "timestamp": "1:01:35",
+    "direction": "공략",
+    "summary_ko": "의상 뽑기를 미루면 전투력이 오르지 않는다고 조언했다.",
+    "note": "이용자 공략 설명이며 공식 성장 공식 아님",
+    "url": "https://www.youtube.com/watch?v=gVFwMSk54vA&t=3695s"
+  },
+  {
+    "evidence_id": "V7-009",
+    "video_id": "gVFwMSk54vA",
+    "channel": "Ngor CH",
+    "timestamp": "1:12:04",
+    "direction": "우려",
+    "summary_ko": "첫날부터 결제하지 않으면 따라가기 어렵다고 말했다.",
+    "note": "무과금 경쟁력 우려",
+    "url": "https://www.youtube.com/watch?v=gVFwMSk54vA&t=4324s"
+  },
+  {
+    "evidence_id": "V7-019",
+    "video_id": "gVFwMSk54vA",
+    "channel": "Ngor CH",
+    "timestamp": "2:19:00",
+    "direction": "긍정",
+    "summary_ko": "통합 거래소라 거래가 수월하다고 평가했다.",
+    "note": "소수 표본에 한정된 의견",
+    "url": "https://www.youtube.com/watch?v=gVFwMSk54vA&t=8340s"
+  }
+]
