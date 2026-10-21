@@ -19,15 +19,15 @@ jobs:
           set -euo pipefail
           cat > /tmp/collector-public.pem <<'PUBLIC'
           -----BEGIN PUBLIC KEY-----
-          MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA1AEYZf5Kl2uRYvM0IQbn
-          SRxkb++Xo200sCyzbcAwmYxd2Iq53FVUxlz7kP68x97IdETKtjFSVi46CQC9NUzt
-          I/x5V87P3EicSz5S6LwLkuKNug803lsbIt+IT+6os41p10h2MHatvOSEbePlLOxD
-          YOQ+alqbi79wWPBatIm0yCz4MsChMKUujv+2q4arrThlhRdtJ7iLZrip5EgupWnp
-          8r27sfUzpStuU8kAOZE7xXSAQjlNcSna6rJ/180WZ0eNwKYV4Ku91/MVOWkUt+I7
-          eXF8p66T7Z3fDqvsJhCoAJum5BNtGqnvCS0s6v7ot8V44e0jKmOmcrJR4RoqIMH5
-          rhT6Y8Kt2rKCzXn5FxtgA6nNOrPyJPBpWMBhD6gwdBYhDCDvlG8gGBvJO9U3nX3U
-          cbQs4aUP8RzyUqfOmga5wpp2SgFp3Q5EkrpyIxDDrSmEO2f8bQ9q2dFIwmx4U5OX
-          lQ5g5XNzNI8+ENmimbrToC0R79tT1D1DUdHqfmTuncHFAgMBAAE=
+          MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAwOTZlW7QMOM8Ks9KrgIz
+          0AaauoDkS9KkZuIVyqIwkNmOEsh5heSGJHr6ubQ9lwCQKmcSAFSvUiN1yQ/xcYg2
+          RQT8N/ugkfGDRpZPtRgzxJts+mbtqW0GdGLNSovqbh8nco+qkMXUtNty9jANHtuP
+          MqHSEY+TT8Qp4cRB7yOA2388bOxDjptivYZQ8YiBOrep8UGwoQv7MjJ8QKT6Txfh
+          siNJcMxLKkR1PkC2c6CKcm02FxIQLpDQUmvXCVvlzg14bEB7E3Z5liN8xMC88+3q
+          61AER4ZdSl8wCuFZkG3HeMBvxNGTMwz36P8RXJb2oh1ru9rmmyMsia0wY8EbBQNb
+          WmFt/6+bqwbXejmvftpyhHyuEIk5nkmevJQat9GxblX2hA7z3En2M1PNJgcU0x4R
+          2ke6aYkLauEEJrQlHaiARTORre7gSlHs1frQufRybe59eZeril17IyyoaMQHyaGV
+          +vp5v8yVfQSGEDK837jsQCN32V+/WNOtHDL2E2zjZzk3AgMBAAE=
           -----END PUBLIC KEY-----
           PUBLIC
           python - <<'PY'
