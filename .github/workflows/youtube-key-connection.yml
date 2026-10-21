@@ -1,0 +1,55 @@
+name: Verify YouTube API connection
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/youtube-key-connection.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Validate key and seal for the private collector
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/collector-public.pem <<'PUBLIC'
+          -----BEGIN PUBLIC KEY-----
+          MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA1AEYZf5Kl2uRYvM0IQbn
+          SRxkb++Xo200sCyzbcAwmYxd2Iq53FVUxlz7kP68x97IdETKtjFSVi46CQC9NUzt
+          I/x5V87P3EicSz5S6LwLkuKNug803lsbIt+IT+6os41p10h2MHatvOSEbePlLOxD
+          YOQ+alqbi79wWPBatIm0yCz4MsChMKUujv+2q4arrThlhRdtJ7iLZrip5EgupWnp
+          8r27sfUzpStuU8kAOZE7xXSAQjlNcSna6rJ/180WZ0eNwKYV4Ku91/MVOWkUt+I7
+          eXF8p66T7Z3fDqvsJhCoAJum5BNtGqnvCS0s6v7ot8V44e0jKmOmcrJR4RoqIMH5
+          rhT6Y8Kt2rKCzXn5FxtgA6nNOrPyJPBpWMBhD6gwdBYhDCDvlG8gGBvJO9U3nX3U
+          cbQs4aUP8RzyUqfOmga5wpp2SgFp3Q5EkrpyIxDDrSmEO2f8bQ9q2dFIwmx4U5OX
+          lQ5g5XNzNI8+ENmimbrToC0R79tT1D1DUdHqfmTuncHFAgMBAAE=
+          -----END PUBLIC KEY-----
+          PUBLIC
+          python - <<'PY'
+          import os, json, urllib.request, urllib.error, subprocess
+          key=os.environ.get('YOUTUBE_API_KEY','')
+          if not key: raise SystemExit('YOUTUBE_API_KEY secret is missing')
+          ids='7Qs3MWJbHHQ,hVmOUD0DmT8,oQn1XXS_Fmc,wKD2bxDzGhM,T78eBrhqu-0,6IQaqST2Ygc,gVFwMSk54vA,G36iQinLR0I'
+          url='https://www.googleapis.com/youtube/v3/videos?part=statistics&id='+ids
+          try:
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'X-Goog-Api-Key':key}),timeout=30) as r:
+                  data=json.load(r)
+          except urllib.error.HTTPError as e:
+              raise SystemExit('YouTube API validation failed (HTTP '+str(e.code)+'); check API enablement and key restrictions')
+          if {v['id'] for v in data.get('items',[])}!=set(ids.split(',')):
+              raise SystemExit('Validation did not return all eight designated videos')
+          subprocess.run(['openssl','pkeyutl','-encrypt','-pubin','-inkey','/tmp/collector-public.pem','-pkeyopt','rsa_padding_mode:oaep','-pkeyopt','rsa_oaep_md:sha256','-out','youtube-key.sealed'],input=key.encode(),check=True)
+          print('Validated 8 designated videos. No paid API used. Secret sealed for private collector setup.')
+          PY
+      - name: Retain encrypted handoff for one day
+        uses: actions/upload-artifact@v4
+        with:
+          name: youtube-key-connection
+          path: youtube-key.sealed
+          retention-days: 1
+          if-no-files-found: error
