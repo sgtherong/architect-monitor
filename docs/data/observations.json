@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-10-21T00:03:32.899Z",
+  "publishedAt": "2026-10-21T01:25:14.374Z",
   "rows": [
     {
       "videoId": "6IQaqST2Ygc",
@@ -1366,6 +1366,110 @@
       "precision": "provider",
       "status": "ok",
       "note": "실제 수집 시점의 누적값. 공식 일일 조회수가 아님."
+    },
+    {
+      "videoId": "7Qs3MWJbHHQ",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 3504,
+      "likes": 14,
+      "comments": 2,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
+    },
+    {
+      "videoId": "hVmOUD0DmT8",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 10451,
+      "likes": 52,
+      "comments": 0,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
+    },
+    {
+      "videoId": "oQn1XXS_Fmc",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 5951,
+      "likes": 34,
+      "comments": 1,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
+    },
+    {
+      "videoId": "wKD2bxDzGhM",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 4360,
+      "likes": 32,
+      "comments": 0,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
+    },
+    {
+      "videoId": "T78eBrhqu-0",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 1139,
+      "likes": 14,
+      "comments": 0,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
+    },
+    {
+      "videoId": "6IQaqST2Ygc",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 5625,
+      "likes": 21,
+      "comments": 0,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
+    },
+    {
+      "videoId": "gVFwMSk54vA",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 1292,
+      "likes": 13,
+      "comments": 0,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
+    },
+    {
+      "videoId": "G36iQinLR0I",
+      "day": "2026-10-21",
+      "observedAt": "2026-10-21T01:22:49.483Z",
+      "views": 3883,
+      "likes": 72,
+      "comments": 0,
+      "reactions": null,
+      "source": "YouTube Data API v3",
+      "precision": "provider",
+      "status": "ok",
+      "note": "공식 API의 실제 관측 시점 누적값. 일일 조회수는 관측 간 차이이며 공식 일일 통계가 아닙니다."
     }
   ],
   "config": {
