@@ -62,3 +62,12 @@ node scripts/prepare-snapshot.mjs /path/to/export.json
 ## 매일 추가된 댓글·채팅 분석
 
 반응 분석은 **일일 신규 반응**과 **기존 방송 분석(10/13)**으로 나뉩니다. 일일 자료는 `docs/data/reactions.json`에서 읽고, 영상·수집일·댓글/채팅·감성 분류별로 확인합니다. 수집 실패와 댓글 0건, 기존 방송의 나중 확보 자료를 구분합니다. 자세한 수집·중복 방지·분석·배포 절차는 `DAILY_REACTIONS.md`를 따릅니다. 공개 수집 스크립트는 유료 API를 호출하지 않습니다.
+
+## 무료 YouTube API 전환 (2026-10-21)
+
+- 수치·일반 댓글은 YouTube Data API v3로 수집합니다. vidIQ 유료 호출·유료 보완은 사용하지 않습니다.
+- 실제 수집은 연결된 owner-private Site의 서버 secret으로 실행합니다. API 키는 브라우저와 공개 파일에 포함되지 않습니다.
+- 기존 자동 작업이 매일 수치 수집, 새로운 댓글 분석, 원본 저장 검증, GitHub 동기화와 공개 배포 검증을 이어서 수행합니다. 별도 중복 수집 스케줄은 만들지 않습니다.
+- GitHub Actions의 수동 `Verify YouTube API connection` 워크플로는 `YOUTUBE_API_KEY` secret으로 고정 8개 영상의 API 연결만 검증하며, 원문·키를 기록하지 않습니다.
+- Facebook 조회·공감은 기존 무료 공개 수집을 유지하며 댓글·채팅 원문 미확보 상태를 구분합니다.
+- 제공자가 달라져도 과거 수치를 덮어쓰지 않고 실제 관측 시각과 출처를 보존합니다.

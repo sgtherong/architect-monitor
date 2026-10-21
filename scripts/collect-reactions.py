@@ -28,7 +28,7 @@ def initial(s,k):
  m=re.search(r'(?:var\s+)?'+k+r'\s*=\s*',s);return json.JSONDecoder().raw_decode(s[m.end():])[0] if m else {}
 def check(vid,kind,status,fetched=None,first=None,analyzed=0,excluded=0,more=None,method='public',note='',at=None):
  at=at or now();return dict(key=key('check',vid,kind+'|'+at),videoId=vid,kind=kind,day=day(at),checkedAt=at,status=status,fetched=fetched,firstObserved=first,analyzed=analyzed,excluded=excluded,hasMore=more,method=method,note=note)
-def collect(target,metrics,state):
+def collect(target,metrics,state,official=None):
  vid=target['id'];seen={r['key'] for r in state.get('seen',[])};out={'checks':[],'candidates':[],'seen':[]}
  previous=[c for c in state.get('checks',[]) if c['videoId']==vid and c['kind']=='comment' and c['status'] in ['complete','partial','count_zero']]
  previous_at=max((c['checkedAt'] for c in previous),default=None)
@@ -40,8 +40,12 @@ def collect(target,metrics,state):
   return out
  archived=any(c['videoId']==vid and c['kind']=='chat' and c['status'] in ['complete','archived'] and c['hasMore'] is False for c in state.get('checks',[]))
  if archived:out['checks'].append(check(vid,'chat','archived',method='종료 방송 기록 유지',note='종료된 방송의 확보된 채팅은 재집계하지 않습니다. 일반 댓글은 별도로 확인합니다.',more=False))
- zero=latest and latest['day']==day(now()) and latest['comments']==0
- if zero:out['checks'].append(check(vid,'comment','count_zero',fetched=0,first=0,more=False,method='현재 공개 댓글 수',note='원문 조회 생략: '+latest['observedAt']+' 관측 댓글 수 0. 방송 채팅 수와는 별개입니다.',at=latest['observedAt']))
+ if official is not None:
+  for field in ['checks','candidates','seen']:out[field].extend(r for r in official.get(field,[]) if r['videoId']==vid)
+  zero=True # Official result (including failure/reuse) owns the comment check; never scrape or pay again.
+ else:
+  zero=latest and latest['day']==day(now()) and latest['comments']==0
+  if zero:out['checks'].append(check(vid,'comment','count_zero',fetched=0,first=0,more=False,method='현재 공개 댓글 수',note='원문 조회 생략: '+latest['observedAt']+' 관측 댓글 수 0. 방송 채팅 수와는 별개입니다.',at=latest['observedAt']))
  if zero and archived:return out
  try:
   page=fetch(target['url']);data=initial(page,'ytInitialData');player=initial(page,'ytInitialPlayerResponse');ctx=config(page,'INNERTUBE_CONTEXT');api_key=config(page,'INNERTUBE_API_KEY')
@@ -105,6 +109,11 @@ def collect(target,metrics,state):
   if not archived:out['checks'].append(check(vid,'chat','unavailable',note='공개 영상 접근 실패: '+str(e)[:150]))
  return out
 if __name__=='__main__':
- ap=argparse.ArgumentParser();ap.add_argument('--metrics',required=True);ap.add_argument('--state',required=True);ap.add_argument('--output',required=True);args=ap.parse_args();metrics=json.loads(Path(args.metrics).read_text());state=json.loads(Path(args.state).read_text())
- with ThreadPoolExecutor(max_workers=2) as ex:results=list(ex.map(lambda t:collect(t,metrics,state),TARGETS))
+ ap=argparse.ArgumentParser();ap.add_argument('--metrics',required=True);ap.add_argument('--state',required=True);ap.add_argument('--output',required=True);ap.add_argument('--official-comments');args=ap.parse_args();metrics=json.loads(Path(args.metrics).read_text());state=json.loads(Path(args.state).read_text())
+ official=json.loads(Path(args.official_comments).read_text()) if args.official_comments else None
+ if official is not None:
+  ids={t['id'] for t in TARGETS if t['platform']=='youtube'}
+  checked={c['videoId'] for c in official.get('checks',[])+official.get('reusedChecks',[])}
+  if checked!=ids or any(r['videoId'] not in ids for field in ['checks','candidates','seen','reusedChecks'] for r in official.get(field,[])):raise ValueError('Official response must cover exactly the eight designated YouTube videos')
+ with ThreadPoolExecutor(max_workers=2) as ex:results=list(ex.map(lambda t:collect(t,metrics,state,official),TARGETS))
  batch={k:[v for r in results for v in r[k]] for k in ['checks','candidates','seen']};Path(args.output).write_text(json.dumps(batch,ensure_ascii=False,indent=2));print(json.dumps({'checks':len(batch['checks']),'candidates':len(batch['candidates']),'firstObserved':len(batch['seen'])}))

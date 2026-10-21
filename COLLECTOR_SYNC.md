@@ -11,7 +11,7 @@
 
 ## 절차
 
-1. 기존 수집·예산·중복 방지 절차를 수행하고 저장 결과를 다시 읽습니다. 같은 날짜에 YouTube 8개 현재 값이 있으면 유료 조회를 반복하지 않습니다. 같은 날 유료 호출이 이미 완료되었으면 신규 추가 영상의 값이 없어도 재호출하지 않고 다음 정기 수집으로 넘깁니다. GitHub 동기화를 위해 새 수집이나 과거 기록 재조회를 실행하지 않습니다.
+1. `DAILY_REACTIONS.md`의 무료 공식 API 절차를 수행하고 원본 Site 저장 결과를 다시 읽습니다. `POST /api/youtube/metrics`는 같은 KST 날짜의 공식 API 수치가 이미 있으면 재조회하지 않습니다. GitHub 동기화를 위해 수집을 반복하거나 과거 통계를 조회하지 않습니다. vidIQ 유료 수치·댓글 보완은 비활성화합니다.
 2. 지정 10개 영상의 전체 관측 기록을 보존합니다. `observedAt`, 한국 시간 `day`, `null`, `precision`, `status`, `source`, `note`를 바꾸지 않습니다. 다른 영상이나 채널 전체 지표는 추가하지 않습니다.
 3. 공개 JSON에는 `schemaVersion: 1`, `publishedAt`, `rows`, `stored: true`, `config.scheduleStatus`, `config.historyStatus`만 포함합니다. `rows`의 필드는 `scripts/prepare-snapshot.mjs`의 허용 목록을 따릅니다. 접근 토큰, 예산·잔액, 수집 내부 식별자는 포함하지 않습니다.
 4. GitHub의 현재 파일과 SHA를 읽습니다. `publishedAt`을 제외한 데이터가 동일하면 커밋하지 않습니다. 변경이 있을 때 현재 SHA를 조건으로 파일 하나만 갱신합니다. 충돌 시 최신 파일을 다시 읽고 누락된 관측이 없는지 확인하며 기존 기록을 덮어 지우지 않습니다.

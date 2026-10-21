@@ -2,23 +2,23 @@
 
 매일 기존 수치 수집에 이어 **댓글·채팅 확보 → 중복 제거 → 한국어 분석 → 저장 검증 → GitHub 커밋 → 공개 배포 확인**까지 수행합니다. 범위는 `data/targets.json`의 10개 영상만입니다. 다른 영상이나 채널 전체를 검색하지 않습니다.
 
-## 읽기와 공개 수집
+## 무료 공식 API 수집 (2026-10-21 전환)
 
-1. Sites get_site로 현재 비공개 서비스 접근을 얻고 `/api/runbook`, `/api/data`, `/api/reactions`를 읽습니다. 인증은 이 Site에만 보내고 메모리/숨김 stdin에서 다룹니다. 공개 GitHub 파일·명령·출력에 인증을 넣지 않습니다.
-2. GitHub main의 이 문서, `scripts/collect-reactions.py`, `scripts/prepare-reactions.mjs`, `data/targets.json`, 두 공개 JSON과 각각의 현재 SHA를 읽습니다. 수집 스크립트는 저장소에서 실행합니다. 현재 수치와 private reaction state를 임시 파일로 준비하고 다음을 실행합니다.
+1. Sites get_site로 현재 서비스 접근을 얻고 `/api/runbook`, `/api/data`, `/api/reactions`를 먼저 읽습니다. 이 Site는 owner-private이며 인증은 해당 Site에만 전송합니다.
+2. `POST /api/youtube/metrics`에 빈 JSON `{}`를 보내 고정 YouTube 8개의 현재 수치를 한 번에 수집합니다. 서버의 `YOUTUBE_API_KEY` secret만 사용합니다. 성공한 공식 API 수치는 KST 날짜별로 캐시되어 재호출 시 `cached:true, quotaUnits:0`입니다. 409는 진행 중 또는 저장 확인 필요 상태이므로 원본 자료를 확인합니다. `GET /api/data`로 저장 결과를 검증합니다. 전환 당일의 기존 vidIQ 관측과 새 공식 관측은 모두 보존합니다.
+3. `POST /api/youtube/reactions`에 `{}`를 보냅니다. 댓글 수가 0보다 크거나 미확인이면 최신순 최대 100개 스레드와 반환된 답글을 읽습니다. 댓글 수가 같아도 확인합니다. 응답의 `candidates`는 저자 식별 정보가 제거된 **임시 분석 입력**이며 원문은 서버에 저장하지 않습니다. `checks`, `seen`, `reusedChecks`가 함께 반환됩니다. 성공한 공식 API 체크가 오늘 이미 저장됐으면 재조회하지 않습니다.
+4. 응답을 임시 `official-comments.json`으로 준비하고 다음 공개 보완 수집기를 실행합니다. 파일과 원문은 GitHub·공개 아티팩트에 올리지 않습니다.
 
-   `python scripts/collect-reactions.py --metrics metrics.json --state private-reactions.json --output reaction-candidates.json`
+   `python scripts/collect-reactions.py --metrics metrics.json --state private-reactions.json --official-comments official-comments.json --output reaction-candidates.json`
 
-   스크립트는 공개 접근만 사용하며 유료 도구를 호출하지 않습니다. 결과의 `candidates`는 분석을 위한 임시 원문이므로 커밋하지 않습니다. 기존 `seen` 해시로 중복을 제거합니다. 동일 문구라도 서로 다른 메시지 ID이면 독립 메시지로 남깁니다. 수집 범위를 넘는 채널/다른 영상은 조회하지 않습니다.
-3. 일반 댓글은 최신순 최대 100개 스레드까지 확인합니다. 카운트가 그대로여도 0보다 크면 매일 원문을 확인합니다. 일부 페이지·답글만 확보한 경우 `partial`로 표시하고 전체 조사로 표현하지 않습니다. 오늘 실제 관측한 댓글 수가 0이면 `count_zero`, 실패·접근 제한은 `unavailable`입니다. 성공적으로 확인된 결과에 새 항목이 없을 때만 신규 확보 0건이라고 말합니다.
-4. 종료 방송에서 완전히 확보한 채팅은 `archived`로 유지하고 다시 합산하지 않습니다. 아직 확보되지 않은 지정 영상의 채팅은 다시보기를 확인하되 이전 방송의 추가 확보분은 `backfill`입니다. 신규 영상이 추가되었다고 기존 방송 채팅을 오늘 작성된 반응으로 표시하지 않습니다. 현재 실행에서 확보된 원문만 사용하며 과거 조회수 재조회는 하지 않습니다.
-5. Facebook 공개 페이지의 조회·반응 숫자로 댓글 내용을 추정하지 않습니다. 기본 공개 수집기는 Facebook 댓글·채팅 원문을 추출하지 못하므로 `unavailable`을 남깁니다. 별도 접근 가능한 공개 원문이 실제 확인될 때만 해당 영상 ID와 연결해 분석하고 상태를 갱신합니다. 로그인 장벽이나 접근 제한을 우회하지 않습니다.
+   `--official-comments`가 있으면 YouTube 일반 댓글을 다시 스크래핑하지 않습니다. 종료 방송의 완전 확보 채팅은 `archived`로 유지하고, 미확보 지정 방송만 다시보기를 확인합니다. Facebook 2개는 공개 경로를 확인하되 원문을 검증하여 추출하지 못하면 `unavailable`입니다. 공개 수치로 반응 내용을 추정하지 않습니다.
+5. `candidates`만 분석하여 저장할 items를 만듭니다. 체크의 `analyzed`는 실제 저장되는 해당 영상·종류의 item 수로 갱신합니다. 실패·불완전 수집을 신규 0건으로 표현하지 않습니다. 종료 방송 채팅 추가분은 `backfill`입니다. 기존 seen과 중복인 항목은 재분석하지 않습니다.
 
-## 필요한 경우에만 유료 댓글 보완
+## 비용과 실패 처리
 
-공개 경로가 실패했고 해당 YouTube 영상의 댓글 수가 0보다 크거나 미확인이면 vidIQ `video_comments(videoId, order:"time", maxResult:100)` 한 페이지를 사용할 수 있습니다. 현재 도구 비용은 5크레딧이며 실행 때 다시 확인합니다. 영상별 KST 하루 1회까지만 허용하고 같은 페이지를 재호출하지 않습니다. 완료된 check가 이미 있으면 같은 날 유료 보완을 반복하지 않습니다. 과거 통계·채널 전체 조회·다른 영상 검색은 금지합니다.
+**vidIQ 및 다른 유료 API는 수치·댓글 모두 사용하지 않습니다.** 무료 경로 실패 시 자동으로 유료 경로를 호출하지 않습니다. 기존 누적 사용액과 잔여 크레딧은 역사적 기록으로 그대로 보존합니다. Google API quotaUnits는 vidIQ 크레딧과 다른 수치입니다. 키 미설정·API 제한·할당량 부족·네트워크 실패는 실제 오류로 알리고 기존 기록을 유지합니다. 임시 429 등으로 기존 일정을 삭제하지 않습니다.
 
-비용은 **기존 동일 총 승인 한도**에 합산합니다. `/api/data`의 `budgetCap/creditsSpent/creditsRemaining`과 vidIQ balance를 확인합니다. 호출 직전 `/api/config`에 `lastReactionBillableKey: "날짜:영상ID"`, `lastReactionBillableState:"pending"`을 저장합니다. pending 완료가 불확실하면 재호출하지 않습니다. `_credits.used` 확인 후 공유 예산을 갱신하고 completed로 기록합니다. 수치 수집용 `lastBillableDay/State`와 구분합니다. 가격 미확인·예산 부족이면 유료 수집을 멈추고 실패 상태와 비용 제약을 알립니다. 추가 유료 보완으로 가능한 남은 수집 횟수가 줄어들 수 있습니다.
+GitHub `YOUTUBE_API_KEY`는 연결 검증용이며, 동일 키가 연결된 비공개 Site의 production secret에도 설정되어 있습니다. 주기적 수집은 기존 자동 작업 하나가 Site의 무료 엔드포인트를 호출합니다. 키 교체 시 양쪽 비밀 설정을 갱신해야 합니다. 키 값은 소스·문서·명령행·로그·공개 JSON에 넣지 않습니다.
 
 ## 원문 분석
 
